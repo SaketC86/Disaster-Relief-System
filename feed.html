@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Live Feed | ReliefSOS</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    body { background-color: var(--dark); }
+    .feed-header {
+      padding: 8rem 5% 2rem;
+      text-align: center;
+      color: #fff;
+    }
+    .filters {
+      display: flex; justify-content: center; gap: 1rem; margin-bottom: 2rem;
+    }
+    .filter-btn {
+      padding: 0.5rem 1.5rem; background: #27272a; color: #a1a1aa; border: 1px solid #3f3f46;
+      border-radius: 50px; cursor: pointer; font-weight: 600; transition: 0.3s;
+    }
+    .filter-btn.active, .filter-btn:hover { background: #fff; color: #000; }
+    
+    .feed-container { max-width: 800px; margin: 0 auto 4rem; padding: 0 5%; }
+    
+    .feed-card {
+      background: rgba(24, 24, 27, 0.95); border: 1px solid #3f3f46;
+      border-radius: 12px; padding: 1.5rem; margin-bottom: 1.5rem;
+      display: flex; gap: 1.5rem; align-items: flex-start;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+    }
+    .feed-icon {
+      width: 50px; height: 50px; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.2rem; flex-shrink: 0; color: #fff;
+    }
+    .icon-sos { background: #e11d48; box-shadow: 0 0 15px rgba(225, 29, 72, 0.4); }
+    .icon-resource { background: #10b981; box-shadow: 0 0 15px rgba(16, 185, 129, 0.4); }
+    
+    .feed-content { width: 100%; }
+    .feed-content h3 { font-size: 1.2rem; color: #fff; margin-bottom: 0.25rem; display: flex; justify-content: space-between; }
+    .feed-content .meta { font-size: 0.85rem; color: #a1a1aa; margin-bottom: 0.75rem; display: flex; gap: 1rem; flex-wrap: wrap; }
+    .feed-content p { color: #e2e8f0; font-size: 0.95rem; }
+    
+    .triage-badge { padding: 2px 8px; border-radius: 4px; font-size: 0.75rem; font-weight: 800; color: #fff; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a href="index.html" style="text-decoration: none;"><h1 class="logo">Relief<span>SOS</span></h1></a>
+    <nav class="menu" id="menu">
+      <a href="index.html">Home</a><a href="needhelp.html">Request Help</a><a href="help.html">Volunteer</a>
+      <a href="feed.html">Live Feed</a><a href="map.html">Radar Map</a><a href="admin.html">Admin</a>
+    </nav>
+  </header>
+
+  <section class="feed-header">
+    <h2 style="font-size: 2.5rem;">Live Community Radar</h2>
+    <p style="color: #a1a1aa;">Real-time updates of requests and available resources.</p>
+  </section>
+
+  <div class="filters">
+    <button class="filter-btn active" data-filter="ALL">All Activity</button>
+    <button class="filter-btn" data-filter="SOS">Emergencies</button>
+    <button class="filter-btn" data-filter="RESOURCE">Resources</button>
+  </div>
+
+  <section class="feed-container" id="feedContainer">
+    </section>
+
+  <script src="js/feed.js"></script>
+
+</body>
+</html>

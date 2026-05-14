@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Command Center | ReliefSOS</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    body { background-color: var(--dark); }
+    .admin-container { padding: 8rem 5% 4rem; max-width: 1200px; margin: 0 auto; }
+    
+    .admin-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 3rem; flex-wrap: wrap; gap: 1rem; }
+    .admin-header h2 { font-size: 2rem; color: #fff; }
+    
+    .danger-btn { padding: 0.75rem 1.5rem; background: transparent; color: #e11d48; border: 1px solid #e11d48; border-radius: 6px; cursor: pointer; font-weight: 600; transition: 0.3s; }
+    .danger-btn:hover { background: #e11d48; color: #fff; }
+
+    .dashboard-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-bottom: 3rem; }
+    
+    .dash-card { background: #27272a; padding: 2rem; border-radius: 12px; border: 1px solid #3f3f46; text-align: center; }
+    .dash-card h3 { font-size: 3rem; font-weight: 800; margin-bottom: 0.5rem; }
+    .dash-card p { color: #a1a1aa; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; }
+    
+    .chart-container { background: #27272a; padding: 2rem; border-radius: 12px; border: 1px solid #3f3f46; margin-bottom: 3rem; height: 350px; }
+    
+    /* Admin Data Table */
+    .data-table-container { background: #27272a; border-radius: 12px; border: 1px solid #3f3f46; overflow-x: auto; padding: 1rem; }
+    table { width: 100%; border-collapse: collapse; text-align: left; color: #e2e8f0; }
+    th, td { padding: 1rem; border-bottom: 1px solid #3f3f46; }
+    th { color: #a1a1aa; font-weight: 600; text-transform: uppercase; font-size: 0.85rem; }
+    .resolve-btn { background: #10b981; color: #fff; border: none; padding: 5px 10px; border-radius: 4px; cursor: pointer; font-size: 0.8rem; }
+    .resolve-btn:hover { background: #059669; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a href="index.html" style="text-decoration: none;"><h1 class="logo">Relief<span>SOS</span></h1></a>
+    <nav class="menu" id="menu">
+      <a href="index.html">Home</a><a href="feed.html">Live Feed</a><a href="map.html">Radar Map</a><a href="admin.html">Admin</a>
+    </nav>
+  </header>
+
+  <section class="admin-container">
+    <div class="admin-header">
+      <h2>System Command Center</h2>
+      <button class="danger-btn" onclick="clearSystemData()"><i class="fa-solid fa-skull"></i> Purge All System Data</button>
+    </div>
+
+    <div class="dashboard-grid">
+      <div class="dash-card">
+        <h3 style="color: #e11d48;" id="sosCount">0</h3>
+        <p>Critical SOS Alerts</p>
+      </div>
+      <div class="dash-card">
+        <h3 style="color: #10b981;" id="resCount">0</h3>
+        <p>Available Resources</p>
+      </div>
+      <div class="dash-card">
+        <h3 style="color: #fff;" id="totalCount">0</h3>
+        <p>Total Database Logs</p>
+      </div>
+    </div>
+
+    <div class="chart-container">
+      <canvas id="systemChart"></canvas>
+    </div>
+
+    <h3 style="color: #fff; margin-bottom: 1rem;">Active Log Management</h3>
+    <div class="data-table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>Type</th>
+            <th>Name</th>
+            <th>Location</th>
+            <th>Priority/Category</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="tableBody">
+          </tbody>
+      </table>
+    </div>
+
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="js/admin.js"></script>
+
+</body>
+</html>
