@@ -1,12 +1,12 @@
 :root {
-  /* Premium Dark Aesthetic Palette */
-  --primary: #e11d48; /* Vibrant Rose Red */
+  
+  --primary: #e11d48; 
   --primary-hover: #be123c;
-  --secondary: #10b981; /* Emerald Green */
-  --dark: #09090b; /* Deep Zinc / Near Black */
-  --surface: #18181b; /* Slightly lighter for cards */
-  --light: #f8fafc; /* Crisp White for text */
-  --text-muted: #a1a1aa; /* Slate for secondary text */
+  --secondary: #10b981; 
+  --dark: #09090b; 
+  --surface: #18181b; 
+  --light: #f8fafc; 
+  --text-muted: #a1a1aa; 
   --glass: rgba(24, 24, 27, 0.6);
   --glass-border: rgba(255, 255, 255, 0.08);
 }
@@ -71,7 +71,6 @@ header {
   display: flex;
   align-items: center;
   padding: 0 5%;
-  /* New Image: Moody aerial night city view */
   background: url('../img/hyd.jpeg') center/cover no-repeat;
 }
 
@@ -79,7 +78,6 @@ header {
   content: '';
   position: absolute;
   top: 0; left: 0; width: 100%; height: 100%;
-  /* Darker gradient overlay to make text pop */
   background: linear-gradient(to right, rgba(9, 9, 11, 0.95) 20%, rgba(9, 9, 11, 0.6) 100%);
 }
 
@@ -137,7 +135,6 @@ header {
 .btn.primary {
   background: var(--primary);
   color: #fff;
-  /* Premium aesthetic glow effect */
   box-shadow: 0 0 20px rgba(225, 29, 72, 0.3); 
 }
 
@@ -290,10 +287,6 @@ header {
   .features { padding-top: 6rem; }
   .menu { display: none; }
 }
-
-/* =========================================================
-   GLOBAL OVERRIDES (Forces other pages into Dark Mode)
-   ========================================================= */
 body, html {
   background-color: var(--dark) !important;
 }
