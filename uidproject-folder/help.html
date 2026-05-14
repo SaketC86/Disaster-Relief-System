@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>I Can Help</title>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <nav>
+
+    <h1 class="logo">ReliefSOS</h1>
+
+    <div class="menu" id="menu">
+      <a href="index.html">Home</a>
+      <a href="feed.html">Feed</a>
+      <a href="map.html">Map</a>
+      <a href="admin.html">Admin</a>
+    </div>
+
+    <button id="toggle">☰</button>
+
+  </nav>
+</header>
+
+<section class="single-help">
+
+  <div class="help-card offer-help">
+
+    <h2>Volunteer Support</h2>
+
+    <p class="section-text">
+      Offer food, shelter, medicine, or emergency support.
+    </p>
+
+    <form id="resourceForm">
+
+      <input type="text" id="helper" placeholder="Volunteer Name" required>
+
+      <input type="text" id="resource" placeholder="Resource Type" required>
+
+      <input type="text" id="quantity" placeholder="Available Quantity" required>
+
+      <button type="submit" class="safe-btn">
+        Offer Resources
+      </button>
+
+    </form>
+
+  </div>
+
+</section>
+
+<script src="js/app.js"></script>
+<script src="js/storage.js"></script>
+<div class="popup-overlay" id="popup">
+  <div class="popup-box">
+    <div class="popup-icon">✅</div>
+    <p class="popup-msg" id="popupMsg"></p>
+    <button class="popup-btn" onclick="closePopup()">OK</button>
+  </div>
+</div>
+
+</body>
+</html>
