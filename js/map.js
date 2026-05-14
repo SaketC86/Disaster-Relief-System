@@ -10,8 +10,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const markers = L.markerClusterGroup({ spiderfyOnMaxZoom: true, showCoverageOnHover: false, zoomToBoundsOnClick: true });
   const posts = JSON.parse(localStorage.getItem('reliefPosts')) || [];
   let userLatLng = null; let routingControl = null;
-
-  // We only need 3 icons now: SOS, Resources, and Volunteer Requests
   const sosIcon = L.divIcon({ className: 'custom-pin', html: '<i class="fa-solid fa-location-dot" style="color: #e11d48; font-size: 40px; filter: drop-shadow(0px 5px 5px rgba(225, 29, 72, 0.4)); text-shadow: 0px 0px 2px #fff;"></i>', iconSize: [40, 40], iconAnchor: [20, 40] });
   const resIcon = L.divIcon({ className: 'custom-pin', html: '<i class="fa-solid fa-location-dot" style="color: #10b981; font-size: 40px; filter: drop-shadow(0px 5px 5px rgba(16, 185, 129, 0.4)); text-shadow: 0px 0px 2px #fff;"></i>', iconSize: [40, 40], iconAnchor: [20, 40] });
   const volReqIcon = L.divIcon({ className: 'custom-pin', html: '<i class="fa-solid fa-location-dot" style="color: #9333ea; font-size: 40px; filter: drop-shadow(0px 5px 5px rgba(147, 51, 234, 0.4)); text-shadow: 0px 0px 2px #fff;"></i>', iconSize: [40, 40], iconAnchor: [20, 40] });
@@ -28,8 +26,9 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   map.on('locationerror', function() {
-    map.setView([17.3850, 78.4867], 12); generateDatabasePins(17.3850, 78.4867);
-  });
+  map.setView([9.10616, 76.4984], 14); 
+  generateDatabasePins(9.10616, 76.4984);
+});
 
   function analyzeSeverity(description) {
     const text = description.toLowerCase();
@@ -39,7 +38,6 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function generateDatabasePins(baseLat, baseLng) {
-    // FILTER OUT PERSONNEL SO THEY NEVER SHOW ON THE MAP
     const publicPosts = posts.filter(post => post.category !== 'PERSONNEL');
 
     publicPosts.forEach((post) => {
