@@ -14,7 +14,6 @@ const ASSETS_TO_CACHE = [
   '/js/admin.js'
 ];
 
-// Install Event - Caches files
 self.addEventListener('install', event => {
   event.waitUntil(
     caches.open(CACHE_NAME)
@@ -23,7 +22,6 @@ self.addEventListener('install', event => {
   );
 });
 
-// Activate Event - Cleans up old caches
 self.addEventListener('activate', event => {
   event.waitUntil(
     caches.keys().then(cacheNames => {
@@ -35,7 +33,6 @@ self.addEventListener('activate', event => {
   );
 });
 
-// Fetch Event - Serves from cache if offline
 self.addEventListener('fetch', event => {
   event.respondWith(
     fetch(event.request).catch(() => caches.match(event.request))
