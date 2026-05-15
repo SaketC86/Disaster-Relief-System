@@ -28,7 +28,7 @@ https://saketc86.github.io/Disaster-Relief-System/
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 | Layer | Technology |
 |-------|-----------|
