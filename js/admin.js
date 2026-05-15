@@ -75,17 +75,16 @@ function drawChart(sos, res) {
   });
 }
 
-// Admin Actions
 window.resolveTicket = function(index) {
   let posts = JSON.parse(localStorage.getItem('reliefPosts')) || [];
-  posts.splice(index, 1); // Remove the specific post
+  posts.splice(index, 1); 
   localStorage.setItem('reliefPosts', JSON.stringify(posts));
-  renderDashboard(); // Refresh the dashboard
+  renderDashboard(); 
 }
 
 window.clearSystemData = function() {
   if(confirm('🚨 WARNING: Are you sure you want to permanently purge all system data? This cannot be undone.')) {
     localStorage.removeItem('reliefPosts');
-    location.reload(); // Refresh to wipe charts and tables
+    location.reload(); 
   }
 }
