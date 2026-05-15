@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     filteredPosts.forEach(post => {
-      // Calculate relative time
+ 
       const timeDiff = Math.floor((new Date() - new Date(post.timestamp)) / 60000);
       let timeString = timeDiff < 1 ? 'Just now' : timeDiff < 60 ? `${timeDiff} mins ago` : `${Math.floor(timeDiff/60)} hrs ago`;
       
@@ -28,7 +28,6 @@ document.addEventListener('DOMContentLoaded', () => {
         ? `<span><i class="fa-solid fa-phone"></i> ${post.contact}</span>`
         : `<span><i class="fa-solid fa-layer-group"></i> Qty: ${post.quantity}</span>`;
 
-      // Check if ML triage data exists from our previous feature
       const triageBadge = post.triage 
         ? `<span class="triage-badge" style="background: ${post.triage.color};">${post.triage.level}</span>` 
         : `<span class="triage-badge" style="background: ${isSOS ? '#e11d48' : '#10b981'};">${isSOS ? 'SOS' : 'RESOURCE'}</span>`;
@@ -51,10 +50,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Initial Render
   renderFeed();
 
-  // Filter Button Logic
   filterBtns.forEach(btn => {
     btn.addEventListener('click', (e) => {
       filterBtns.forEach(b => b.classList.remove('active'));
