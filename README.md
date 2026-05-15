@@ -44,7 +44,7 @@ https://saketc86.github.io/Disaster-Relief-System/
 
 ##  Project Structure
 
-ReliefSOS/
+ReliefSOS/   
 ├── index.html           
 ├── needhelp.html         
 ├── help.html             
