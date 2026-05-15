@@ -1,4 +1,4 @@
-# 🚨 ReliefSOS — Hyper-Local Disaster Relief & SOS Coordinator
+#  ReliefSOS — Hyper-Local Disaster Relief & SOS Coordinator
 
 A real-time disaster coordination web app that connects people in critical need
 with nearby volunteers and emergency resources instantly.
@@ -10,21 +10,21 @@ with nearby volunteers and emergency resources instantly.
 4.P.Sputhnik -Radar Map(map.html,map.js)  
 5.M.Yaswanth -Admin and PWA(admin.html,admin.js)  
 
-## 🌐 Live Demo
-
+## Live Demo
+https://saketc86.github.io/Disaster-Relief-System/
 ---
 
-## ✨ Features
+## Features
 
-- 🆘 **SOS Request System** — Submit emergency alerts with GPS-pinned location
-- 💚 **Volunteer Resource Registry** — List available supplies for routing
-- 📡 **Live Community Feed** — Real-time log of all active SOS & resource posts
-- 🗺️ **Radar Map** — Interactive Leaflet map with marker clustering & route plotting
-- 🧠 **Auto Triage Engine** — Keyword-based severity classification (Code Red/Yellow/Green)
-- 🌦️ **Live Weather API** — Open-Meteo integration for local hazard monitoring
-- 🚚 **Logistics Routing** — Leaflet Routing Machine for optimal transit paths
-- 🛡️ **Admin Dashboard** — Resolve tickets, view stats, purge data
-- 📲 **PWA Ready** — Installable on mobile with offline caching via Service Worker
+-  **SOS Request System** — Submit emergency alerts with GPS-pinned location
+-  **Volunteer Resource Registry** — List available supplies for routing
+-  **Live Community Feed** — Real-time log of all active SOS & resource posts
+-  **Radar Map** — Interactive Leaflet map with marker clustering & route plotting
+-  **Auto Triage Engine** — Keyword-based severity classification (Code Red/Yellow/Green)
+-  **Live Weather API** — Open-Meteo integration for local hazard monitoring
+-  **Logistics Routing** — Leaflet Routing Machine for optimal transit paths
+-  **Admin Dashboard** — Resolve tickets, view stats, purge data
+-  **PWA Ready** — Installable on mobile with offline caching via Service Worker
 
 ---
 
@@ -42,7 +42,7 @@ with nearby volunteers and emergency resources instantly.
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ReliefSOS/
 ├── index.html         
