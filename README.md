@@ -45,24 +45,24 @@ https://saketc86.github.io/Disaster-Relief-System/
 ##  Project Structure
 
 ReliefSOS/
-├── index.html         
-├── needhelp.html       
-├── help.html           
-├── feed.html           
-├── map.html           
-├── admin.html         
-├── css/
-│   └── style.css
-├── js/
-│   ├── app.js
-│   ├── storage.js      
-│   ├── feed.js        
-│   ├── map.js          
-│   └── admin.js        
-├── img/
-│   └── hyd.jpeg
-├── manifest.json       
-└── sw.js               
+├── index.html           
+├── needhelp.html         
+├── help.html             
+├── feed.html             
+├── map.html             
+├── admin.html           
+├── css/  
+│   └── style.css  
+├── js/  
+│   ├── app.js    
+│   ├── storage.js        
+│   ├── feed.js          
+│   ├── map.js            
+│   └── admin.js          
+├── img/  
+│   └── hyd.jpeg  
+├── manifest.json         
+└── sw.js                 
 
 
 
