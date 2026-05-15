@@ -15,7 +15,6 @@ function renderDashboard() {
     if (post.category === 'SOS') sosCount++;
     if (post.category === 'RESOURCE') resCount++;
 
-    // Populate Table
     const badgeColor = post.category === 'SOS' ? '#e11d48' : '#10b981';
     const triageText = post.triage ? post.triage.level : post.category;
     
@@ -39,11 +38,9 @@ function renderDashboard() {
     tableBody.innerHTML = '<tr><td colspan="5" style="text-align:center; color:#a1a1aa;">Database is empty.</td></tr>';
   }
 
-  // Draw Chart
   drawChart(sosCount, resCount);
 }
 
-// Chart.js Setup
 let systemChartInstance = null;
 function drawChart(sos, res) {
   const ctx = document.getElementById('systemChart').getContext('2d');
