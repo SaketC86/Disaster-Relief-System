@@ -33,7 +33,7 @@ https://saketc86.github.io/Disaster-Relief-System/
 ### Core Technologies
 - HTML5
 - CSS3
-- JavaScript (Vanilla)
+- JavaScript 
 
 ### Additional Technologies
 - Leaflet.js — Interactive map rendering
