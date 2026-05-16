@@ -48,7 +48,7 @@ https://saketc86.github.io/Disaster-Relief-System/
 ## 📸 Screenshots
 
 ### Homepage
-![Home](uidScreenshots/home.png)
+![Home](uid Screenshots/home.png)
 
 
 ### SOS Form
