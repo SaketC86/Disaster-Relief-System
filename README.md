@@ -62,7 +62,7 @@ https://saketc86.github.io/Disaster-Relief-System/
 ![Live Feed](Screenshots/feed.png)
 
 ### Radar Map
-![Radar Map](Screenshots/radar_map.png)
+![Radar Map](Screenshots/radarmap.png)
 
 ### Map tracking
 ![Map tracking](Screenshots/tracking.png)
