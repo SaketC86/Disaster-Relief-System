@@ -43,28 +43,23 @@ https://saketc86.github.io/Disaster-Relief-System/
 - Chart.js — Admin dashboard statistics
 - Web App Manifest + Service Worker — PWA support (installable, offline-capable)
 
+## Screenshots
 
-##  Project Structure
+## 📸 Screenshots
 
-ReliefSOS/   
-├── index.html           
-├── needhelp.html         
-├── help.html             
-├── feed.html             
-├── map.html             
-├── admin.html           
-├── css/  
-│   └── style.css  
-├── js/  
-│   ├── app.js    
-│   ├── storage.js        
-│   ├── feed.js          
-│   ├── map.js            
-│   └── admin.js          
-├── img/  
-│   └── hyd.jpeg  
-├── manifest.json         
-└── sw.js                 
+### Homepage
+![Home](uidScreenshots/home.png)
 
 
+### SOS Form
+![SOS Form](screenshots/sos-form.png)
+
+### Live Feed
+![Live Feed](screenshots/feed.png)
+
+### Radar Map
+![Radar Map](screenshots/map.png)
+
+### Admin Dashboard
+![Admin Dashboard](screenshots/admin.png)
 
