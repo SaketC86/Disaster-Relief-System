@@ -58,9 +58,8 @@ https://saketc86.github.io/Disaster-Relief-System/
 ### Resource form
 ![Resource Form](Screenshots/resource.png)
 
-
 ### Live Feed
-![Live Feed](Sreenshots/feed.png)
+![Live Feed](Screenshots/feed.png)
 
 ### Radar Map
 ![Radar Map](Screenshots/radar_map.png)
