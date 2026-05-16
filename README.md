@@ -28,19 +28,21 @@ https://saketc86.github.io/Disaster-Relief-System/
 
 ---
 
-##  Tech Stack
+## 🛠️ Technologies Used
 
-| Layer | Technology |
-|-------|-----------|
-| Frontend | HTML5, CSS3, Vanilla JavaScript |
-| Maps | Leaflet.js, MarkerCluster, Routing Machine |
-| Geocoding | Leaflet Control Geocoder |
-| Weather | Open-Meteo API |
-| Charts | Chart.js |
-| Storage | localStorage (client-side) |
-| PWA | Web App Manifest + Service Worker |
+### Core Technologies
+- HTML5
+- CSS3
+- JavaScript (Vanilla)
 
----
+### Additional Technologies
+- Leaflet.js — Interactive map rendering
+- Leaflet Routing Machine — Route plotting between locations
+- Leaflet Control Geocoder — Address to coordinate resolution
+- Open-Meteo API — Live local weather data
+- Chart.js — Admin dashboard statistics
+- Web App Manifest + Service Worker — PWA support (installable, offline-capable)
+
 
 ##  Project Structure
 
