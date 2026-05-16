@@ -1,7 +1,8 @@
 #  ReliefSOS — Hyper-Local Disaster Relief & SOS Coordinator
 
-A real-time disaster coordination web app that connects people in critical need
-with nearby volunteers and emergency resources instantly.
+ReliefSOS is a hyper-local disaster relief coordination platform that connects people in critical need with nearby volunteers and emergency resources in real time. Built as a Progressive Web App (PWA), it features an automated triage engine,an interactive radar map, and a live community feed — making disaster response faster, smarter, and more organised.
+
+--- 
 
 ## Team Members
 1.Saket.C -Main UI building (index.html,styles.css)  
@@ -10,7 +11,7 @@ with nearby volunteers and emergency resources instantly.
 4.P.Sputhnik -Radar Map(map.html,map.js)  
 5.M.Yaswanth -Admin and PWA(admin.html,admin.js)  
 
-## Live Demo
+## Live Website
 https://saketc86.github.io/Disaster-Relief-System/
 ---
 
@@ -28,7 +29,7 @@ https://saketc86.github.io/Disaster-Relief-System/
 
 ---
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 ### Core Technologies
 - HTML5
@@ -43,22 +44,29 @@ https://saketc86.github.io/Disaster-Relief-System/
 - Chart.js — Admin dashboard statistics
 - Web App Manifest + Service Worker — PWA support (installable, offline-capable)
 
-## Screenshots
+--- 
 
-## 📸 Screenshots
+##  Screenshots
 
 ### Homepage
-![Home](uid Screenshots/home.png)
+![Home](Screenshots/home.png)
 
 
 ### SOS Form
-![SOS Form](screenshots/sos-form.png)
+![SOS Form](Screenshots/sos.png)
+
+### Resource form
+![Resource Form](Screenshots/resource.png)
+
 
 ### Live Feed
 ![Live Feed](screenshots/feed.png)
 
 ### Radar Map
-![Radar Map](screenshots/map.png)
+![Radar Map](screenshots/radar_map.png)
+
+### Map tracking
+![Map tracking](screenshots/tracking.png)
 
 ### Admin Dashboard
 ![Admin Dashboard](screenshots/admin.png)
